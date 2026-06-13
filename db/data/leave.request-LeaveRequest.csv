@@ -1,0 +1,4 @@
+ID,employeeName,leaveType,startDate,endDate,status,comments
+f1e2d3c4-0001-0000-0000-000000000001,Maria Papadopoulou,Annual,2026-07-01,2026-07-05,Pending,Summer vacation
+f1e2d3c4-0002-0000-0000-000000000002,Nikos Georgiou,Sick,2026-06-10,2026-06-12,Approved,Medical certificate attached
+f1e2d3c4-0003-0000-0000-000000000003,Elena Dimitriou,Annual,2026-08-01,2026-08-10,Rejected,Overlaps with colleague
