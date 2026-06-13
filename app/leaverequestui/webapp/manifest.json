@@ -103,6 +103,7 @@
             "settings": {
               "contextPath": "/LeaveRequests",
               "variantManagement": "Page",
+              "initialLoad": true,
               "navigation": {
                 "LeaveRequests": {
                   "detail": {
@@ -127,7 +128,30 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/LeaveRequests"
+              "contextPath": "/LeaveRequests",
+              "controlConfiguration": {
+                "sap.fe.templates.ObjectPage.controller": {
+                  "controllerExtensionName": "leaverequestui.ext.controller.ObjectPageExtension"
+                }
+              },
+              "content": {
+                "header": {
+                  "actions": {
+                    "approveRequest": {
+                      "press": "leaverequestui.ext.controller.ObjectPageExtension.approveRequest",
+                      "enabled": true,
+                      "visible": true,
+                      "text": "Approve"
+                    },
+                    "rejectRequest": {
+                      "press": "leaverequestui.ext.controller.ObjectPageExtension.rejectRequest",
+                      "enabled": true,
+                      "visible": true,
+                      "text": "Reject"
+                    }
+                  }
+                }
+              }
             }
           }
         }
