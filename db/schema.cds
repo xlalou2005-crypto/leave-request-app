@@ -1,6 +1,5 @@
 namespace leave.request;
 
-@odata.draft.enabled
 entity LeaveRequest {
     key ID           : UUID;
         employeeName : String(100);

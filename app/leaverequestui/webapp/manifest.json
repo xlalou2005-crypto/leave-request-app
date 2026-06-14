@@ -117,6 +117,17 @@
                     "type": "ResponsiveTable"
                   }
                 }
+              },
+              "content": {
+                "header": {
+                  "actions": {
+                    "createRequest": {
+                      "press": "leaverequestui.ext.controller.ListReportExtension.createRequest",
+                      "visible": true,
+                      "text": "Create"
+                    }
+                  }
+                }
               }
             }
           }
