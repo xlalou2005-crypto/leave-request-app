@@ -19,8 +19,9 @@ annotate service.LeaveRequests with @(
             Label: 'End Date'
         },
         {
-            Value: status,
-            Label: 'Status'
+            Value      : status,
+            Label      : 'Status',
+            Criticality: criticality
         }
     ],
     UI.FieldGroup #GeneralInfo: {

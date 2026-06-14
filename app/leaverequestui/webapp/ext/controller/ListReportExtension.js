@@ -56,6 +56,21 @@ sap.ui.define([
                             status: "Pending",
                             comments: oComments.getValue()
                         };
+
+                        //Validation
+                        if(!oData.employeeName.trim()){
+                            MessageToast.show("Please enter employee name");
+                            return;
+                        }
+                        if(!oData.startDate || oEndDate.endDate){
+                            MessageToast.show("Please select start and end dates");
+                            return;
+                        }
+                        if(new Date(oData.endDate) < new Date(oData.startDate)){
+                            MessageToast.show("End date must be after start date");
+                            return;
+                        }
+
                         console.log("Sending data:", oData);
 
                         const oListBinding =oModel.bindList("/LeaveRequests");

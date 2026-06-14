@@ -8,4 +8,12 @@ entity LeaveRequest {
         endDate      : Date;
         status       : String(20); // Pending, Approved, Rejected
         comments     : String(500);
+        criticality  : Integer = case
+                                     status
+                                     when 'Approved'
+                                          then 3
+                                     when 'Rejected'
+                                          then 1
+                                     else 2
+                                 end;
 }
